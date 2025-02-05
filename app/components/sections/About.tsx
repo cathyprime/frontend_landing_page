@@ -1,21 +1,24 @@
-'use client'
-import React from 'react'
+"use client";
+import React from "react";
 
 const About: React.FC = () => {
   const values = [
     {
-      title: 'Misja',
-      description: 'Nasza misja to dostarczanie innowacyjnych rozwiązań, które realnie wpływają na sukces naszych klientów.'
+      title: "Misja",
+      description:
+        "Nasza misja to dostarczanie innowacyjnych rozwiązań, które realnie wpływają na sukces naszych klientów.",
     },
     {
-      title: 'Wizja',
-      description: 'Dążymy do bycia liderem w branży, wyznaczając standardy jakości i innowacyjności.'
+      title: "Wizja",
+      description:
+        "Dążymy do bycia liderem w branży, wyznaczając standardy jakości i innowacyjności.",
     },
     {
-      title: 'Wartości',
-      description: 'Stawiamy na profesjonalizm, uczciwość i ciągły rozwój, budując długotrwałe relacje z klientami.'
-    }
-  ]
+      title: "Wartości",
+      description:
+        "Stawiamy na profesjonalizm, uczciwość i ciągły rozwój, budując długotrwałe relacje z klientami.",
+    },
+  ];
 
   return (
     <section id="about" className="py-20 bg-white">
@@ -24,8 +27,9 @@ const About: React.FC = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">O nas</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Jesteśmy zespołem pasjonatów, którzy łączą doświadczenie z innowacyjnym podejściem,
-            aby dostarczać najlepsze rozwiązania dla naszych klientów.
+            Jesteśmy zespołem pasjonatów, którzy łączą doświadczenie z
+            innowacyjnym podejściem, aby dostarczać najlepsze rozwiązania dla
+            naszych klientów.
           </p>
         </div>
 
@@ -57,7 +61,7 @@ const About: React.FC = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default About
+export default About;

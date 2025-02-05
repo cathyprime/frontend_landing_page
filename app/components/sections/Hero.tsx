@@ -1,5 +1,5 @@
-'use client'
-import React from 'react'
+"use client";
+import React from "react";
 
 const Hero: React.FC = () => {
   return (
@@ -12,8 +12,8 @@ const Hero: React.FC = () => {
             <span className="text-blue-600"> Propozycja Wartości</span>
           </h1>
           <p className="text-xl text-gray-600 mb-8">
-            Krótki, przekonujący opis tego, co oferujesz i jak to pomaga Twoim klientom.
-            Skup się na głównych korzyściach.
+            Krótki, przekonujący opis tego, co oferujesz i jak to pomaga Twoim
+            klientom. Skup się na głównych korzyściach.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <button className="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
@@ -39,7 +39,7 @@ const Hero: React.FC = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

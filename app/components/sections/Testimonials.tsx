@@ -1,5 +1,5 @@
-'use client'
-import React from 'react'
+"use client";
+import React from "react";
 
 interface Testimonial {
   content: string;
@@ -12,36 +12,42 @@ interface Testimonial {
 const Testimonials: React.FC = () => {
   const testimonials: Testimonial[] = [
     {
-      content: "Niesamowite doświadczenie współpracy. Zespół jest profesjonalny i zawsze pomocny. Polecam każdemu, kto szuka wysokiej jakości usług.",
+      content:
+        "Niesamowite doświadczenie współpracy. Zespół jest profesjonalny i zawsze pomocny. Polecam każdemu, kto szuka wysokiej jakości usług.",
       author: "Jan Kowalski",
       role: "CEO",
       company: "Tech Solutions",
-      image: "/placeholder.jpg" // Placeholder na zdjęcie
+      image: "/placeholder.jpg", // Placeholder na zdjęcie
     },
     {
-      content: "Współpraca przebiegła sprawnie i bezproblemowo. Efekty przerosły nasze oczekiwania. Na pewno będziemy kontynuować współpracę.",
+      content:
+        "Współpraca przebiegła sprawnie i bezproblemowo. Efekty przerosły nasze oczekiwania. Na pewno będziemy kontynuować współpracę.",
       author: "Anna Nowak",
       role: "Marketing Manager",
       company: "Creative Studio",
-      image: "/placeholder.jpg"
+      image: "/placeholder.jpg",
     },
     {
-      content: "Profesjonalne podejście i świetna komunikacja. Zespół rozumie potrzeby klienta i proponuje optymalne rozwiązania.",
+      content:
+        "Profesjonalne podejście i świetna komunikacja. Zespół rozumie potrzeby klienta i proponuje optymalne rozwiązania.",
       author: "Piotr Wiśniewski",
       role: "Product Owner",
       company: "Digital Agency",
-      image: "/placeholder.jpg"
-    }
-  ]
+      image: "/placeholder.jpg",
+    },
+  ];
 
   return (
     <section id="testimonials" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         {/* Nagłówek sekcji */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Co mówią o nas klienci</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Co mówią o nas klienci
+          </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Zobacz, co sądzą o nas osoby, które już nam zaufały i skorzystały z naszych usług.
+            Zobacz, co sądzą o nas osoby, które już nam zaufały i skorzystały z
+            naszych usług.
           </p>
         </div>
 
@@ -54,10 +60,10 @@ const Testimonials: React.FC = () => {
             >
               {/* Cudzysłów jako ikona */}
               <div className="text-4xl text-blue-600 mb-4">"</div>
-              
+
               {/* Treść opinii */}
               <p className="text-gray-600 mb-6">{testimonial.content}</p>
-              
+
               {/* Autor opinii */}
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-gray-200 rounded-full mr-4" />
@@ -74,7 +80,7 @@ const Testimonials: React.FC = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Testimonials
+export default Testimonials;
